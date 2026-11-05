@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>CV — Johanès Abdon Amoussouga | Cybersécurité</title>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1f2937;
+            font-size: 9.5pt;
+            line-height: 1.42;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .container {
+            display: flex;
+            width: 210mm;
+            min-height: 297mm;
+            height: 297mm;
+            overflow: hidden;
+        }
+        
+        /* SIDEBAR GAUCHE */
+        .sidebar {
+            width: 72mm;
+            background: #0b121c;
+            color: #e5e7eb;
+            padding: 14mm 14mm;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .profile-photo {
+            width: 28mm;
+            height: 28mm;
+            margin: 0 auto 2px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #38bdf8;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+        }
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .sidebar h3 {
+            font-size: 8.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #38bdf8;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+        }
+        .contact-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            font-size: 8.5pt;
+        }
+        .contact-list li {
+            display: flex;
+            flex-direction: column;
+            word-break: break-all;
+        }
+        .contact-list .label {
+            font-size: 7pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+        .contact-list a, .contact-list span {
+            color: #f1f5f9;
+            text-decoration: none;
+        }
+        
+        .skill-group {
+            margin-bottom: 9px;
+        }
+        .skill-group:last-child {
+            margin-bottom: 0;
+        }
+        .skill-group-title {
+            font-size: 8pt;
+            font-weight: 600;
+            color: #cbd5e1;
+            margin-bottom: 3px;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .tag {
+            background: #162436;
+            color: #93c5fd;
+            border: 1px solid #1e3a5f;
+            padding: 1.5px 6px;
+            border-radius: 3px;
+            font-size: 7.5pt;
+            font-weight: 500;
+        }
+        
+        .cert-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .cert-item {
+            font-size: 8pt;
+            line-height: 1.3;
+        }
+        .cert-name {
+            font-weight: 600;
+            color: #ffffff;
+            display: block;
+        }
+        .cert-org {
+            font-size: 7.5pt;
+            color: #38bdf8;
+        }
+
+        .lang-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 8pt;
+        }
+        .lang-list li {
+            display: flex;
+            justify-content: space-between;
+            color: #e2e8f0;
+        }
+        .lang-list span:last-child {
+            color: #94a3b8;
+        }
+
+        /* COLONNE PRINCIPALE */
+        .main {
+            width: 138mm;
+            padding: 20mm 16mm 16mm 16mm;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        /* HEADER */
+        .header {
+            border-bottom: 2px solid #0284c7;
+            padding-bottom: 10px;
+        }
+        .name {
+            font-size: 20pt;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #0b121c;
+            line-height: 1.1;
+        }
+        .name span {
+            color: #0284c7;
+        }
+        .title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #475569;
+            margin-top: 3px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        .summary {
+            font-size: 8.5pt;
+            color: #334155;
+            margin-top: 6px;
+            line-height: 1.45;
+        }
+
+        /* SECTIONS */
+        .section-title {
+            font-size: 9.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #0369a1;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #e2e8f0;
+        }
+
+        .timeline-item {
+            margin-bottom: 10px;
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        .item-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+        .item-role {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .item-date {
+            font-size: 7.8pt;
+            font-weight: 600;
+            color: #0284c7;
+            white-space: nowrap;
+        }
+        .item-sub {
+            font-size: 8pt;
+            font-weight: 500;
+            color: #64748b;
+            margin-bottom: 4px;
+        }
+        .item-bullets {
+            list-style: none;
+            padding-left: 0;
+        }
+        .item-bullets li {
+            position: relative;
+            padding-left: 12px;
+            font-size: 8.2pt;
+            color: #334155;
+            margin-bottom: 2px;
+            line-height: 1.38;
+        }
+        .item-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 2px;
+            color: #0284c7;
+            font-weight: bold;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 7px;
+        }
+        .proj-card {
+            background: #f8fafc;
+            border-left: 3px solid #0284c7;
+            padding: 5px 8px;
+            border-radius: 0 4px 4px 0;
+        }
+        .proj-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .proj-title {
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .proj-tags {
+            font-size: 7pt;
+            font-weight: 600;
+            color: #0369a1;
+        }
+        .proj-desc {
+            font-size: 8pt;
+            color: #475569;
+            margin-top: 2px;
+            line-height: 1.35;
+        }
+
+        /* Bouton print flottant pour affichage navigateur */
+        .print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0284c7;
+            color: #ffffff;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 999;
+        }
+        .print-btn:hover {
+            background: #0369a1;
+        }
+        @media print {
+            .print-btn {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn" onclick="window.print()">
+        📄 Imprimer / Télécharger en PDF
+    </button>
+
+    <div class="container">
+        
+        <!-- SIDEBAR GAUCHE -->
+        <aside class="sidebar">
+            
+            <div class="profile-photo">
+                <img src="../images/profil.jpeg" alt="Johanès Abdon Amoussouga">
+            </div>
+
+            <!-- CONTACT -->
+            <div>
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li>
+                        <span class="label">Localisation</span>
+                        <span>Cotonou, Bénin</span>
+                    </li>
+                    <li>
+                        <span class="label">Email</span>
+                        <a href="mailto:johanesamoussouga@gmail.com">johanesamoussouga@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/johanès-abdon-amoussouga-16b75231b">in/johanès-abdon-amoussouga</a>
+                    </li>
+                    <li>
+                        <span class="label">GitHub</span>
+                        <a href="https://github.com/Joha12A">github.com/Joha12A</a>
+                    </li>
+                    <li>
+                        <span class="label">Portfolio</span>
+                        <span>j4m0us.dev</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- COMPÉTENCES -->
+            <div>
+                <h3>Compétences</h3>
+                
+                <div class="skill-group">
+                    <div class="skill-group-title">Sécurité Offensive & Audit</div>
+                    <div class="skill-tags">
+                        <span class="tag">Pentest Web</span>
+                        <span class="tag">Burp Suite</span>
+                        <span class="tag">Nmap</span>
+                        <span class="tag">SQLMap</span>
+                        <span class="tag">CTF</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Systèmes & Environnements</div>
+                    <div class="skill-tags">
+                        <span class="tag">Kali Linux</span>
+                        <span class="tag">Ubuntu Server</span>
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">Hardening</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Réseaux & Protocoles</div>
+                    <div class="skill-tags">
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">DNS / DNSSEC</span>
+                        <span class="tag">SSH</span>
+                        <span class="tag">Wireshark</span>
+                        <span class="tag">IIS</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Développement & DevOps</div>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">Langage C</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CERTIFICATIONS -->
+            <div>
+                <h3>Certifications</h3>
+                <ul class="cert-list">
+                    <li class="cert-item">
+                        <span class="cert-name">CCEP — Cyber Educator</span>
+                        <span class="cert-org">Red Team Leaders (2026)</span>
+                    </li>
+                    <li class="cert-item">
+                        <span class="cert-name">CLLMSP — LLM Security</span>
+                        <span class="cert-org">Red Team Leaders (2026)</span>
+                    </li>
+                    <li class="cert-item">
+                        <span class="cert-name">Security Awareness for Everyone</span>
+                        <span class="cert-org">CyberExam (2026)</span>
+                    </li>
+                    <li class="cert-item">
+                        <span class="cert-name">Introduction to Cybersecurity</span>
+                        <span class="cert-org">Cisco Networking Academy</span>
+                    </li>
+                    <li class="cert-item">
+                        <span class="cert-name">Networking Basics</span>
+                        <span class="cert-org">Cisco Networking Academy</span>
+                    </li>
+                    <li class="cert-item">
+                        <span class="cert-name">Langage Python & Cyber</span>
+                        <span class="cert-org">Cursa</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- LANGUES -->
+            <div>
+                <h3>Langues</h3>
+                <ul class="lang-list">
+                    <li><span>Français</span><span>Natif / Courant</span></li>
+                    <li><span>Anglais</span><span>Technique / Professionnel</span></li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- MAIN COLUMN -->
+        <main class="main">
+            
+            <!-- HEADER -->
+            <header class="header">
+                <h1 class="name">Johanès Abdon <span>Amoussouga</span></h1>
+                <div class="title">Étudiant en Cybersécurité · Sécurité Offensive & Réseaux</div>
+                <p class="summary">
+                    Passionné par la sécurité des systèmes et réseaux, je combine rigueur académique et pratique intensive (labs, CTF, hardening). Je recherche un <strong>stage / opportunité en cybersécurité</strong> (Pentest, Ingénierie Cyber, SOC) pour mettre en pratique mes compétences et contribuer activement à la protection des infrastructures.
+                </p>
+            </header>
+
+            <!-- FORMATION ACADÉMIQUE -->
+            <section>
+                <h2 class="section-title">Formation Académique</h2>
+                
+                <div class="timeline-item">
+                    <div class="item-head">
+                        <span class="item-role">Licence en Sécurité Informatique</span>
+                        <span class="item-date">Depuis Octobre 2024</span>
+                    </div>
+                    <div class="item-sub">ESGIS Bénin — Cotonou</div>
+                    <ul class="item-bullets">
+                        <li>Membre actif du Club Hacking : participation à des CTF, simulations d'attaques et de défense réseau.</li>
+                        <li>Spécialisation : architecture réseau sécurisée, durcissement système, sécurité web et automatisation.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-head">
+                        <span class="item-role">DT IMI (Installation & Maintenance en Informatique)</span>
+                        <span class="item-date">2021 – 2024</span>
+                    </div>
+                    <div class="item-sub">Lycée Technique et Professionnel de Kpondéhou</div>
+                    <ul class="item-bullets">
+                        <li>Bases approfondies en architecture matérielle, systèmes d'exploitation, diagnostic et câblage réseau.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- EXPÉRIENCE PROFESSIONNELLE -->
+            <section>
+                <h2 class="section-title">Expérience Professionnelle</h2>
+                
+                <div class="timeline-item">
+                    <div class="item-head">
+                        <span class="item-role">Assistant Informatique & Réseau (Stagiaire)</span>
+                        <span class="item-date">Juil. – Août 2024</span>
+                    </div>
+                    <div class="item-sub">Ministère de la Santé du Bénin — Cotonou</div>
+                    <ul class="item-bullets">
+                        <li>Support technique et assistance de premier et deuxième niveau auprès des utilisateurs.</li>
+                        <li>Maintenance préventive et curative du parc informatique (ordinateurs, périphériques).</li>
+                        <li>Diagnostic d'incidents de connectivité et maintenance des équipements réseau du site.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PROJETS & LABS MAJEURS -->
+            <section>
+                <h2 class="section-title">Projets & Réalisations Techniques</h2>
+                
+                <div class="project-grid">
+                    
+                    <div class="proj-card">
+                        <div class="proj-head">
+                            <span class="proj-title">Plateforme de Cyberdéfense Autonome (Mémoire)</span>
+                            <span class="proj-tags">IA · Cyberdéfense · Python</span>
+                        </div>
+                        <div class="proj-desc">
+                            Conception d'une architecture de détection autonome d'intrusions basée sur l'IA, spécifiquement adaptée aux contraintes d'infrastructure et de ressources des PME africaines.
+                        </div>
+                    </div>
+
+                    <div class="proj-card">
+                        <div class="proj-head">
+                            <span class="proj-title">DNS Split-Horizon sécurisé avec DNSSEC</span>
+                            <span class="proj-tags">DNS · DNSSEC · Kali · Wireshark</span>
+                        </div>
+                        <div class="proj-desc">
+                            Mise en place de zones DNS cloisonnées avec signature cryptographique DNSSEC. Test d'empoisonnement de cache depuis Kali Linux et analyse des flux sous Wireshark.
+                        </div>
+                    </div>
+
+                    <div class="proj-card">
+                        <div class="proj-head">
+                            <span class="proj-title">Durcissement & Audit d'un Serveur SSH</span>
+                            <span class="proj-tags">Ubuntu Server · Hardening · Fail2Ban</span>
+                        </div>
+                        <div class="proj-desc">
+                            Sécurisation avancée d'accès distant (clés asymétriques, désactivation root/passwords, protection anti-bruteforce) validée par des tests d'intrusion offensifs.
+                        </div>
+                    </div>
+
+                    <div class="proj-card">
+                        <div class="proj-head">
+                            <span class="proj-title">Lab Active Directory (AD DS) & Hardening</span>
+                            <span class="proj-tags">Windows Server · GPO · Kerberos · Hardening</span>
+                        </div>
+                        <div class="proj-desc">
+                            Déploiement d'une forêt AD DS d'entreprise, durcissement via GPO (mots de passe, désactivation LLMNR), audit des droits et simulation d'élévation de privilèges.
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
