@@ -33,9 +33,9 @@ const DATA={
 
   {n:"Security Awareness for Everyone",o:"CyberExam",date:"2026",img:"assets/images/cyberexam.png",url:"assets/certs/CyberExam-Certificate-Security-Awareness-for-Everyone.pdf",status:"Obtenue",d:"Sensibilisation globale aux cybermenaces : ingénierie sociale, détection des attaques de phishing, protection des données et hygiène numérique.",tags:["Sensibilisation","Anti-Phishing","Social Engineering","Cyber Hygiène"]},
 
-  {n:"Introduction à la cybersécurité",o:"Cursa",date:"2024",img:"",url:"assets/certs/Cursa-Cybersecurite.pdf",status:"Obtenue",d:"Panorama des cybermenaces, sensibilisation aux risques numériques et sécurisation des environnements de travail.",tags:["Hygiène Informatique","Protection Données","Cybermenaces"]},
+  {n:"Introduction à la cybersécurité",o:"Cursa",date:"2024",img:"assets/images/cursa-cybersecurite.jpeg",url:"assets/certs/cursa-cybersecurite.pdf",status:"Obtenue",d:"Panorama des cybermenaces, sensibilisation aux risques numériques et sécurisation des environnements de travail.",tags:["Hygiène Informatique","Protection Données","Cybermenaces"]},
 
-  {n:"Langage Python",o:"Cursa",date:"2024",img:"",url:"assets/certs/Cursa-Python.pdf",status:"Obtenue",d:"Programmation en Python, structures de données, algorithmique et bases pour l'automatisation de scripts système.",tags:["Python","Algorithmique","Automatisation","Scripting"]}],
+  {n:"Langage Python",o:"Cursa",date:"2024",img:"assets/images/cursa-python.jpeg",url:"assets/certs/cursa-python.pdf",status:"Obtenue",d:"Programmation en Python, structures de données, algorithmique et bases pour l'automatisation de scripts système.",tags:["Python","Algorithmique","Automatisation","Scripting"]}],
 
  projects:[
 
