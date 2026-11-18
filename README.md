@@ -11,6 +11,7 @@ Bienvenue sur le dépôt de mon portfolio personnel dédié à la **cybersécuri
 - **Formation** : Licence en Sécurité Informatique (ESGIS Bénin).
 - **Spécialisations** : Pentest web & réseaux, durcissement d'infrastructure (Linux, Windows Server, Active Directory), supervision SOC / SIEM (Wazuh) et automatisation (Python, Bash, Docker).
 - **Certifications** :
+  - *Hackviser* : Certified Cybersecurity Foundations (CORE)
   - *Cisco Networking Academy* : Networking Basics, Introduction to Cybersecurity
   - *CyberExam* : Security Awareness for Everyone
   - *CyberWarFare Labs* : Certified Cyber Security Analyst (C3SA)

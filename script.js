@@ -23,6 +23,8 @@ const DATA={
 
  certs:[
 
+  {n:"Certified Cybersecurity Foundations (CORE)",o:"Hackviser",date:"2026",img:"assets/images/Certified Cybersecurity Foundations.png",url:"assets/certs/Certified Cybersecurity Foundations.pdf",status:"Obtenue",d:"Certification attestant les fondamentaux en cybersécurité acquis à travers des modules de formation et des exercices pratiques couvrant les concepts essentiels de sécurité informatique.",tags:["Fondamentaux Cyber","Sécurité des SI","Sécurité Pratique","Hackviser"]},
+
   {n:"Introduction to Cybersecurity",o:"Cisco Networking Academy",date:"2024",img:"assets/images/introduction-to-cybersecurity.png",url:"assets/certs/Introduction-to-Cybersecurity.pdf",status:"Obtenue",d:"Principes fondamentaux de la sécurité : confidentialité, intégrité et disponibilité (CIA), typologies des cyberattaques et stratégies globales de cyberdéfense.",tags:["Sécurité des SI","Modèle CIA","Menaces Réseau","Cisco NetAcad"]},
 
   {n:"Certified Cyber Security Analyst (C3SA)",o:"CyberWarFare Labs",date:"2026",img:"assets/images/analyste_en_cybersécurité_certifie (C3SA).png",url:"assets/certs/analyste_en_cybersécurité_certifie (C3SA).pdf",status:"Obtenue",d:"Certification attestant les compétences en analyse de cybersécurité, l’évaluation des menaces et l’examen des contrôles de sécurité dans des environnements professionnels.",tags:["Analyse SOC","Cyber Threats","Security Controls","Incident Response"]},
