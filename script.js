@@ -25,6 +25,8 @@ const DATA={
 
   {n:"Introduction to Cybersecurity",o:"Cisco Networking Academy",date:"2024",img:"assets/images/introduction-to-cybersecurity.png",url:"assets/certs/Introduction-to-Cybersecurity.pdf",status:"Obtenue",d:"Principes fondamentaux de la sécurité : confidentialité, intégrité et disponibilité (CIA), typologies des cyberattaques et stratégies globales de cyberdéfense.",tags:["Sécurité des SI","Modèle CIA","Menaces Réseau","Cisco NetAcad"]},
 
+  {n:"Certified Cyber Security Analyst (C3SA)",o:"CyberWarFare Labs",date:"2026",img:"assets/images/analyste_en_cybersécurité_certifie (C3SA).png",url:"assets/certs/analyste_en_cybersécurité_certifie (C3SA).pdf",status:"Obtenue",d:"Certification attestant les compétences en analyse de cybersécurité, l’évaluation des menaces et l’examen des contrôles de sécurité dans des environnements professionnels.",tags:["Analyse SOC","Cyber Threats","Security Controls","Incident Response"]},
+
   {n:"Networking Basics",o:"Cisco Networking Academy",date:"2024",img:"assets/images/networking-basics.png",url:"assets/certs/Networking-Basics.pdf",status:"Obtenue",d:"Architecture et protocoles réseaux, modèle OSI, suite TCP/IP, routage, commutation et bases de l'adressage IPv4/IPv6.",tags:["Architecture Réseau","Modèle OSI","TCP/IP","Routage & Switch"]},
 
   {n:"CCEP — Certified Cybersecurity Educator Professional",o:"Red Team Leaders",date:"2026",img:"assets/images/CCEP.png",url:"assets/certs/CCEP.pdf",status:"Obtenue",d:"Transmission des compétences et pédagogie appliquée à la cybersécurité, sensibilisation aux risques et bonnes pratiques de sécurité.",tags:["Pédagogie Cyber","Sensibilisation","Social Engineering","Bonnes Pratiques"]},
@@ -63,7 +65,7 @@ const DATA={
 
   {y:"DEPUIS OCT. 2024",t:"Licence Sécurité Informatique",s:"ESGIS Bénin · Club Hacking · labs, CTF, pratique Linux, réseaux et sécurité"},
 
-  {y:"2024–2026",t:"Certifications Cybersécurité & Réseaux",s:"Cisco (Introduction to Cybersecurity, Networking Basics), Red Team Leaders (CCEP, CLLMSP), Cursa"},
+  {y:"2024–2026",t:"Certifications Cybersécurité & Réseaux",s:"Cisco, CyberWarFare Labs (C3SA), Red Team Leaders (CCEP, CLLMSP), CyberExam, Cursa"},
 
   {y:"OBJECTIF",t:"Pentester / Cybersecurity Engineer",s:"Recherche active d'un stage / d'une opportunité en sécurité offensive"}],
 

@@ -13,7 +13,8 @@ Bienvenue sur le dépôt de mon portfolio personnel dédié à la **cybersécuri
 - **Certifications** :
   - *Cisco Networking Academy* : Networking Basics, Introduction to Cybersecurity
   - *CyberExam* : Security Awareness for Everyone
-  - *CertiProf* : CCEP (Cybersecurity Educator), CLLMSP
+  - *CyberWarFare Labs* : Certified Cyber Security Analyst (C3SA)
+  - *Red Team Leaders* : CCEP (Cybersecurity Educator), CLLMSP
 
 ---
 
