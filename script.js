@@ -9,7 +9,7 @@ const DATA={
 
  labs:{v:"15+",l:"Labs & CTF documentés"},
 
- about:[["Formation","Licence — Sécurité informatique","ESGIS Bénin"],["Orientation","Pentest · Réseaux","Cybersecurity Engineering"],["Approche","Labs · CTF","Projets pratiques"],["Langues","Français (courant)","Anglais (technique & pro)"]],
+ about:[["Formation","Licence — Sécurité informatique","ESGIS Bénin"],["Orientation","Pentest · Réseaux","Cybersecurity Engineering"],["Approche","Labs · CTF","Projets pratiques"],["Langues","Français (courant)","Anglais (intermédiaire / technique)"]],
 
  skills:[
 
