@@ -10,19 +10,23 @@ portfolio-j4m0us/
 └── assets/
     ├── images/             # Photos & badges des certifications
     │   ├── profil.jpeg
+    │   ├── Certified Cybersecurity Foundations.png
+    │   ├── analyste_en_cybersécurité_certifie (C3SA).png
     │   ├── introduction-to-cybersecurity.png
     │   ├── networking-basics.png
     │   ├── CCEP.png
     │   ├── CLLMSP.png
     │   └── cyberexam.png
     ├── certs/              # Documents PDF officiels des certifications
+    │   ├── Certified Cybersecurity Foundations.pdf
+    │   ├── analyste_en_cybersécurité_certifie (C3SA).pdf
     │   ├── Introduction-to-Cybersecurity.pdf
     │   ├── Networking-Basics.pdf
     │   ├── CCEP.pdf
     │   ├── CLLMSP.pdf
     │   ├── CyberExam-Certificate-Security-Awareness-for-Everyone.pdf
-    │   ├── Cursa-Cybersecurite.pdf (à déposer ici)
-    │   └── Cursa-Python.pdf (à déposer ici)
+    │   ├── cursa-cybersecurite.pdf
+    │   └── cursa-python.pdf
     └── cv/                 # Fichiers CV
         ├── CV-Johanes-Amoussouga.pdf
         └── cv.html

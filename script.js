@@ -67,7 +67,7 @@ const DATA={
 
   {y:"DEPUIS OCT. 2024",t:"Licence Sécurité Informatique",s:"ESGIS Bénin · Club Hacking · labs, CTF, pratique Linux, réseaux et sécurité"},
 
-  {y:"2024–2026",t:"Certifications Cybersécurité & Réseaux",s:"Cisco, CyberWarFare Labs (C3SA), Red Team Leaders (CCEP, CLLMSP), CyberExam, Cursa"},
+  {y:"2024–2026",t:"Certifications Cybersécurité & Réseaux",s:"Hackviser (CORE), CyberWarFare Labs (C3SA), Red Team Leaders (CCEP, CLLMSP), Cisco, CyberExam, Cursa"},
 
   {y:"OBJECTIF",t:"Pentester / Cybersecurity Engineer",s:"Recherche active d'un stage / d'une opportunité en sécurité offensive"}],
 
@@ -101,7 +101,7 @@ $("#skills").innerHTML=DATA.skills.map((c,i)=>`<div class="card" tabindex="0"><s
 
 $("#certs").innerHTML=DATA.certs.map(c=>`<article class="card"><a class="cb" href="${c.url}" target="_blank" rel="noopener noreferrer" title="Ouvrir le certificat ${c.n}">${c.img?`<img src="${c.img}" alt="Certificat ${c.n}" loading="lazy" width="480" height="270">`:`<b>${c.o.split(" ").map(w=>w[0]).join("").slice(0,3)}</b><small>OBTENUE</small>`}</a><span class="mono">${c.o}${c.date?" · "+c.date:""}</span><span class="bd ok">✓ ${c.status||"Obtenue"}</span><h3>${c.n}</h3><p>${c.d}</p><div class="tg">${(c.tags||[]).map(t=>`<span>${t}</span>`).join("")}</div><div class="cert-foot"><a class="btn-cert" href="${c.url}" target="_blank" rel="noopener noreferrer">📄 Ouvrir le certificat ↗</a></div></article>`).join("");
 
-$("#projs").innerHTML=DATA.projects.map((p,i)=>`<article class="pr" data-p="${i}" tabindex="0" role="button" aria-label="Voir le projet ${p.n}"><span class="pn">${pad(i)}</span><div class="pt"><span class="mono">${p.k}</span><span class="bd${p.on?" w":""}">${p.on?"EN COURS":"LAB / TP"}</span><h3>${p.n}</h3><p>${p.d}</p><div class="tg">${p.t.map(t=>`<span>${t}</span>`).join("")}</div></div>${p.github?`<a class="go" href="${p.github}" target="_blank" rel="noopener noreferrer">Voir le projet ↗</a>`:`<button class="go is-disabled" type="button" disabled>Bientôt disponible</button>`}</article>`).join("");
+$("#projs").innerHTML=DATA.projects.map((p,i)=>`<article class="pr"><span class="pn">// ${pad(i)}</span><div class="pt"><div class="pt-top"><span class="mono">${p.k}</span><span class="bd${p.on?" w":""}">${p.on?"EN COURS":"LAB / TP"}</span></div><h3>${p.n}</h3><p>${p.d}</p><div class="tg">${p.t.map(t=>`<span>${t}</span>`).join("")}</div></div>${p.github?`<a class="go" href="${p.github}" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub ↗</a>`:`<button class="go is-disabled" type="button" disabled>Lab documenté · Dépôt bientôt public</button>`}</article>`).join("");
 
 $("#tl").innerHTML=DATA.journey.map(j=>`<li><span class="y">${j.y}</span><b>${j.t}</b><span class="s">${j.s}</span></li>`).join("");
 
@@ -117,11 +117,15 @@ $("#fl").innerHTML=lk.map(l=>l[1]?`<a href="${l[1]}" ${l[1].startsWith("http")?'
 
 const dlg=$("#dlg"),open=h=>{$("#dm").innerHTML=`<button class="x" onclick="dlg.close()">Fermer</button>`+h;dlg.showModal()};
 
-document.addEventListener("click",e=>{if(e.target===dlg){dlg.close();return;}if(e.target.closest("[data-close-dialog]")){dlg.close();return;}if(e.target.closest(".go"))return;const b=e.target.closest("[data-c],[data-p]");if(!b)return;
-
- if(b.dataset.c){const c=DATA.certs[b.dataset.c];open(`<span class="mono">${c.o}${c.date?" · "+c.date:""}</span><h3 id="dt">${c.n}</h3><p style="color:var(--mu);margin-top:1rem">Certification officiellement obtenue et validée. Le justificatif est en cours de numérisation et sera consultable ici directement très prochainement.</p><p style="margin-top:1rem">${c.d}</p>`)}
-
- else{const p=DATA.projects[b.dataset.p];open(`<span class="mono">${p.k}</span><h3 id="dt">${p.n}</h3><p class="project-summary">${p.d}</p><h4>OBJECTIF</h4><p>${p.obj}</p><h4>CONTEXTE</h4><p>${p.ctx}</p><h4>TECHNOLOGIES</h4><div class="tg">${p.t.map(t=>`<span>${t}</span>`).join("")}</div><h4>CE QUE J’AI FAIT</h4><ul>${p.did.map(x=>`<li>${x}</li>`).join("")}</ul><h4>CE QUE J’AI APPRIS</h4><p>${p.learn}</p><p class="project-github">${p.github?`<a class="btn p" href="${p.github}" target="_blank" rel="noopener noreferrer">Consulter le projet sur GitHub ↗</a>`:`<button class="btn p is-disabled" type="button" disabled>Bientôt disponible</button>`}</p>`)}});
+document.addEventListener("click",e=>{
+  if(e.target===dlg){dlg.close();return;}
+  if(e.target.closest("[data-close-dialog]")){dlg.close();return;}
+  const b=e.target.closest("[data-c]");
+  if(b&&b.dataset.c){
+    const c=DATA.certs[b.dataset.c];
+    open(`<span class="mono">${c.o}${c.date?" · "+c.date:""}</span><h3 id="dt">${c.n}</h3><p style="color:var(--mu);margin-top:1rem">${c.d}</p><div class="cert-foot" style="margin-top:1.5rem"><a class="btn-cert" href="${c.url}" target="_blank" rel="noopener noreferrer">📄 Ouvrir le certificat ↗</a></div>`);
+  }
+});
 
 /* nav, scroll, reveal, spotlight */
 
@@ -140,11 +144,3 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 
 if(matchMedia("(hover:hover)").matches)document.addEventListener("pointermove",e=>{const c=e.target.closest&&e.target.closest(".card,.pr");if(c){const r=c.getBoundingClientRect();c.style.setProperty("--mx",e.clientX-r.left+"px");c.style.setProperty("--my",e.clientY-r.top+"px")}},{passive:true});
-
-
-/* Accessibilité clavier pour les fiches projets. */
-document.addEventListener("keydown", e => {
-  const row = e.target.closest && e.target.closest("article.pr[data-p]");
-  if (!row || e.target.closest(".go")) return;
-  if (e.key === "Enter" || e.key === " ") { e.preventDefault(); row.click(); }
-});
