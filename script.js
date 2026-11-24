@@ -23,6 +23,10 @@ const DATA={
 
  certs:[
 
+  {n:"Fortinet NSE 2 Certified in Cybersecurity",o:"Fortinet Training Institute",date:"2026",img:"assets/images/introduction-to-the-next-generation-firewall-1-0-nse2.png",url:"assets/certs/Fortinet NSE 2 Certified in Cybersecurity.pdf",status:"Obtenue",d:"Introduction aux pare-feu nouvelle génération (NextGen Firewall v1.0) et compréhension de l'évolution des menaces et des mécanismes de sécurité réseau.",tags:["Fortinet NSE 2","NextGen Firewall","Sécurité Réseau","Cybermenaces"]},
+
+  {n:"Fortinet NSE 1 Certified in Cybersecurity",o:"Fortinet Training Institute",date:"2026",img:"assets/images/fortinet-nse-1-certified-in-cybersecurity.png",url:"assets/certs/Fortinet NSE 1 Certified in Cybersecurity.pdf",status:"Obtenue",d:"Fondamentaux de la cybersécurité et sensibilisation au paysage actuel des menaces informatiques et réseau.",tags:["Fortinet NSE 1","Fondamentaux Cyber","Menaces Réseau","Sécurité des SI"]},
+
   {n:"Certified Cybersecurity Foundations (CORE)",o:"Hackviser",date:"2026",img:"assets/images/Certified Cybersecurity Foundations.png",url:"assets/certs/Certified Cybersecurity Foundations.pdf",status:"Obtenue",d:"Certification attestant les fondamentaux en cybersécurité acquis à travers des modules de formation et des exercices pratiques couvrant les concepts essentiels de sécurité informatique.",tags:["Fondamentaux Cyber","Sécurité des SI","Sécurité Pratique","Hackviser"]},
 
   {n:"Introduction to Cybersecurity",o:"Cisco Networking Academy",date:"2024",img:"assets/images/introduction-to-cybersecurity.png",url:"assets/certs/Introduction-to-Cybersecurity.pdf",status:"Obtenue",d:"Principes fondamentaux de la sécurité : confidentialité, intégrité et disponibilité (CIA), typologies des cyberattaques et stratégies globales de cyberdéfense.",tags:["Sécurité des SI","Modèle CIA","Menaces Réseau","Cisco NetAcad"]},
@@ -67,7 +71,7 @@ const DATA={
 
   {y:"DEPUIS OCT. 2024",t:"Licence Sécurité Informatique",s:"ESGIS Bénin · Club Hacking · labs, CTF, pratique Linux, réseaux et sécurité"},
 
-  {y:"2024–2026",t:"Certifications Cybersécurité & Réseaux",s:"Hackviser (CORE), CyberWarFare Labs (C3SA), Red Team Leaders (CCEP, CLLMSP), Cisco, CyberExam, Cursa"},
+  {y:"2024–2026",t:"Certifications Cybersécurité & Réseaux",s:"Fortinet (NSE 1, NSE 2), Hackviser (CORE), CyberWarFare Labs (C3SA), Red Team Leaders (CCEP, CLLMSP), Cisco, CyberExam, Cursa"},
 
   {y:"OBJECTIF",t:"Pentester / Cybersecurity Engineer",s:"Recherche active d'un stage / d'une opportunité en sécurité offensive"}],
 

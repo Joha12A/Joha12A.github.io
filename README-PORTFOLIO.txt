@@ -10,6 +10,8 @@ portfolio-j4m0us/
 └── assets/
     ├── images/             # Photos & badges des certifications
     │   ├── profil.jpeg
+    │   ├── fortinet-nse-1-certified-in-cybersecurity.png
+    │   ├── introduction-to-the-next-generation-firewall-1-0-nse2.png
     │   ├── Certified Cybersecurity Foundations.png
     │   ├── analyste_en_cybersécurité_certifie (C3SA).png
     │   ├── introduction-to-cybersecurity.png
@@ -18,6 +20,8 @@ portfolio-j4m0us/
     │   ├── CLLMSP.png
     │   └── cyberexam.png
     ├── certs/              # Documents PDF officiels des certifications
+    │   ├── Fortinet NSE 1 Certified in Cybersecurity.pdf
+    │   ├── Fortinet NSE 2 Certified in Cybersecurity.pdf
     │   ├── Certified Cybersecurity Foundations.pdf
     │   ├── analyste_en_cybersécurité_certifie (C3SA).pdf
     │   ├── Introduction-to-Cybersecurity.pdf
